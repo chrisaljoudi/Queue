@@ -1,5 +1,5 @@
 var assert = require("assert");
-var Queue = require("../../node-queue");
+var Queue = require("../index.js");
 
 describe("Queue", function() {
 	describe("one push", function() {
