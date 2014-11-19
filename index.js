@@ -1,28 +1,36 @@
-module.exports = function() {
-	var queue = [], offset = 0;
-	this.__defineGetter__("length", function() {
-		return queue.length - offset;
-	});
-	this.__defineGetter__("top", function() {
-		return (queue.length > 0 ? queue[offset] : undefined);
-	});
-	this.push = function(val) {
-		queue.push(val);
-	};
-	this.pop = function() {
-		if(queue.length === 0) {
-			return undefined;
-		}
-		var old = queue[offset];
-		offset ++;
-		if(offset * 2 >= queue.length) {
-			queue = queue.slice(offset);
-			offset = 0;
-		}
-		return old;
-	};
-	this.reset = function() {
-		queue = [];
-		offset = 0;
-	};
+function Queue() {
+	this.queue = [];
+	this.offset = 0;
+}
+Queue.prototype.push = function(val) {
+	this.queue.push(val);
 };
+Queue.prototype.pop = function() {
+	var queue = this.queue;
+	if(queue.length === 0) {
+		return undefined;
+	}
+	var old = queue[this.offset];
+	this.offset ++;
+	if(this.offset * 2 >= queue.length) {
+		queue = queue.slice(this.offset);
+		this.offset = 0;
+	}
+	return old;
+};
+Queue.prototype.reset = function() {
+	this.queue = [];
+	this.offset = 0;
+};
+Object.defineProperty(Queue.prototype, "length", {
+	get: function length() {
+		return this.queue.length - this.offset;
+	}
+});
+Object.defineProperty(Queue.prototype, "top", {
+	get: function length() {
+		var queue = this.queue;
+		return (queue.length > 0 ? queue[this.offset] : undefined);
+	}
+});
+module.exports = Queue;
