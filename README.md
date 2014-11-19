@@ -1,4 +1,4 @@
-# Queue 
+# Queue [![Build Status](https://travis-ci.org/chrisaljoudi/Queue.svg?branch=master)](https://travis-ci.org/chrisaljoudi/Queue)
 A simple, efficient queue module for node and the browser.
 
 ## Usage:
