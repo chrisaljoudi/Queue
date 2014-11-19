@@ -1,15 +1,6 @@
-# node-queue
-### A simple, efficient queue module for node and the browser.
+# Queue 
+A simple, efficient queue module for node and the browser.
 
-## Installation:
-With [`npm`](https://www.npmjs.org/):
-```bash
-npm install node-queue
-```
-And then you can import:
-```javascript
-var Queue = require("node-queue");
-```
 ## Usage:
 
 Create a new empty queue:

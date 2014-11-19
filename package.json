@@ -1,7 +1,7 @@
 {
   "name": "node-queue",
   "version": "1.0.0",
-  "description": "A simple, efficient queue module",
+  "description": "A simple, efficient queue module.",
   "main": "index.js",
   "keywords": [
     "queue"
