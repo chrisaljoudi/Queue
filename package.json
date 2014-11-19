@@ -1,0 +1,11 @@
+{
+  "name": "queue",
+  "version": "1.0.0",
+  "description": "A queue structure",
+  "main": "index.js",
+  "keywords": [
+    "queue"
+  ],
+  "author": "Chris Aljoudi",
+  "license": "New BSD"
+}
