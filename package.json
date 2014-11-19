@@ -17,7 +17,7 @@
   "license": "New BSD",
   "devDependencies": {
     "mocha": "^2.0.1"
-  }
+  },
   "bugs": {
     "url": "https://github.com/chrisaljoudi/Queue/issues"
   },
