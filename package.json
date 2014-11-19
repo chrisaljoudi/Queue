@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A simple, efficient queue module.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisaljoudi/Queue.git"
+  },
   "scripts": {
     "test": "mocha"
   },
@@ -10,5 +14,12 @@
     "queue"
   ],
   "author": "Chris Aljoudi",
-  "license": "New BSD"
+  "license": "New BSD",
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+  "bugs": {
+    "url": "https://github.com/chrisaljoudi/Queue/issues"
+  },
+  "homepage": "https://github.com/chrisaljoudi/Queue"
 }
