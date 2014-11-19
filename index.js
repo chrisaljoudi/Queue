@@ -12,7 +12,7 @@ Queue.prototype.pop = function() {
 	}
 	var old = queue[this.offset];
 	this.offset ++;
-	if(this.offset * 2 >= queue.length) {
+	if(this.offset * 2 > queue.length) {
 		queue = queue.slice(this.offset);
 		this.offset = 0;
 	}
