@@ -23,5 +23,6 @@ module.exports = function() {
 	};
 	this.reset = function() {
 		queue = [];
+		offset = 0;
 	};
 };
