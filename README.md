@@ -34,4 +34,4 @@ q.reset();
 
 ## License
 
-[New BSD](LICENSE).
+Queue is released under the MIT License. [See LICENSE](LICENSE).
